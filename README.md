@@ -17,7 +17,6 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 We use pytorch-gpu for neural networks.
 
 An nvidia GPU is needed for faster retrival.
-OverlapTransformer is also fast enough when using the neural network on CPU.
 
 To use a GPU, first you need to install the nvidia driver and CUDA.
 
