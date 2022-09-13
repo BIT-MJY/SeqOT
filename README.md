@@ -74,7 +74,18 @@ python test_seqot.py
 
 Before training and test, please modify the params in the [config.yml](https://github.com/BIT-MJY/SeqOT/blob/main/config/config.yml)
 
+- data_root:
 * range_image_database_root: path of reference range images in database sequence.
+* range_image_query_root: path of query range images in query sequence.  
+- training_seqot:
+* traindata_file: index for training.
+* poses_file: poses of the trajectory of the database.
+* height: height of range images.
+* width: width of range images.
+* seqlen: sequence length to generate sub-descriptors.
+* lr: learning rate for training feature extracter.
+* resume: whether resuming from the pretrained model below.
+* weights: pretrained feature extracter.
 
 
 
