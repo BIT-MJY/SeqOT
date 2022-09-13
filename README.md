@@ -113,6 +113,17 @@ groud_truth_file: ground truth containing correct loops.
 * poses_query: poses of the trajectory of the query sequence.
 
 ## Data preparation
+
+### Range image generation
+
+Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/tools/utils/gen_depth_data.py) to generate range images of NCLT dataset. You need to modify the params including `scan_folder` and `dst_folder`.
+
+### Training index generation
+
+Coming soon ...
+
+### Groud truth generation
+
 Coming soon ...
 
 ## License
