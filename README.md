@@ -108,8 +108,11 @@ groud_truth_file: ground truth containing correct loops.
 * poses_database: poses of the trajectory of the database.
 * poses_query: poses of the trajectory of the query sequence.
 
+## License
 
+Copyright 2022, Junyi Ma, Xieyuanli Chen, Jingyi Xu, Guangming Xiong, Beijing Institute of Technology.
 
+This project is free software made available under the MIT License. For more details see the LICENSE file.
 
 
 
