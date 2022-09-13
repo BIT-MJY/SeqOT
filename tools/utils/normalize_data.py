@@ -25,23 +25,7 @@ def normalize_data(ground_truth_mapping):
   bin_80_89 = gt_map[(gt_map[:, 2] < 0.9) & (gt_map[:, 2] >= 0.8)]
   bin_90_100 = gt_map[(gt_map[:, 2] <= 1) & (gt_map[:, 2] >= 0.9)]
 
-  # # print the distribution
-  # distribution = [len(bin_0_9), len(bin_10_19), len(bin_20_29), len(bin_30_39), len(bin_40_49),
-  #                 len(bin_50_59), len(bin_60_69), len(bin_70_79), len(bin_80_89), len(bin_90_100)]
-  # print(distribution)
 
-  # keep different bins the same amount of samples
-  # bin_0_9 = bin_0_9[np.random.choice(len(bin_0_9), len(bin_40_49))]
-  # bin_10_19 = bin_10_19[np.random.choice(len(bin_10_19), len(bin_40_49))]
-  # bin_20_29 = bin_20_29[np.random.choice(len(bin_20_29), len(bin_40_49))]
-  # bin_30_39 = bin_30_39[np.random.choice(len(bin_30_39), len(bin_40_49))]
-  # bin_40_49 = bin_40_49[np.random.choice(len(bin_40_49), len(bin_40_49))]
-
-  # 源代码只注释了下面这部分，我把上面那部分也注释掉了
-  # bin_50_59 = bin_50_59[np.random.choice(len(bin_50_59), len(bin_40_49))]
-  # bin_60_69 = bin_60_69[np.random.choice(len(bin_60_69), len(bin_40_49))]
-  # bin_70_79 = bin_70_79[np.random.choice(len(bin_70_79), len(bin_40_49))]
-  # bin_80_89 = bin_80_89[np.random.choice(len(bin_80_89), len(bin_40_49))]
 
   dist_norm_data = np.concatenate((bin_0_9, bin_10_19, bin_20_29, bin_30_39, bin_40_49,
                                   bin_50_59, bin_60_69, bin_70_79, bin_80_89, bin_90_100))

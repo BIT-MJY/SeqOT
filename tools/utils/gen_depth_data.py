@@ -54,8 +54,6 @@ def gen_depth_data(scan_folder, dst_folder, normalize=False):
 
     # load LiDAR scan files
     scan_paths = load_files(scan_folder)
-    # scan_paths_new = sorted(scan_paths, key=lambda x: x[:-4])
-    # print(scan_paths_new == scan_paths)
     scan_files = os.listdir(scan_folder)
 
     depths = []
@@ -63,16 +61,7 @@ def gen_depth_data(scan_folder, dst_folder, normalize=False):
     # iterate over all scan files
     for idx in range(0, len(scan_paths)):
         # load a point cloud
-        print(scan_paths[idx])
         current_vertex = get_velo(scan_paths[idx])[0]
-        # plt.scatter(current_vertex[:, 0], current_vertex[:, 1], s=0.1)
-        # plt.show()
-        # plt.scatter(current_vertex[:, 0], current_vertex[:, 2], s=0.1)
-        # plt.show()
-        # current_vertex_refine = np.zeros_like(current_vertex)
-        # current_vertex_refine[:,0] = current_vertex[:,0]
-        # current_vertex_refine[:,1] = -current_vertex[:,1]
-        # current_vertex_refine[:,2] = -current_vertex[:,-2]
 
         fov_up = 30.67
         fov_down = -10.67
@@ -95,11 +84,7 @@ def gen_depth_data(scan_folder, dst_folder, normalize=False):
             proj_range = proj_range / np.max(proj_range)
 
         # generate the destination path
-        # dst_path = os.path.join(dst_folder, str(idx).zfill(6)+".png")
         dst_path = os.path.join(dst_folder, str(idx).zfill(6))
-
-        # plt.imshow(proj_range)
-        # plt.show()
 
         np.save(dst_path, proj_range)
         depths.append(proj_range)
@@ -109,16 +94,6 @@ def gen_depth_data(scan_folder, dst_folder, normalize=False):
 
 
 if __name__ == '__main__':
-    # scan_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-09-28_vel/velodyne_sync'
-    # dst_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-09-28_vel/range_image'
-    # scan_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2013-04-05_vel/velodyne_sync'
-    # dst_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2013-04-05_vel/range_image'
-    # scan_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-02-05_vel/velodyne_sync'
-    # dst_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-02-05_vel/range_image'
-    # scan_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-06-15_vel/velodyne_sync'
-    # dst_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-06-15_vel/range_image'
-    # scan_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-10-28_vel/velodyne_sync'
-    # dst_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-10-28_vel/range_image'
     scan_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2013-02-23_vel/velodyne_sync'
     dst_folder = '/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2013-02-23_vel/range_image'
     depth_data = gen_depth_data(scan_folder, dst_folder)
