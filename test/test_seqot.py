@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # load config ================================================================
     config_filename = '../config/config.yml'
     config = yaml.safe_load(open(config_filename))
-    gt_file_name = config["test_seqot"]["groud_truth_file"]
+    gt_file_name = config["test_seqot"]["ground_truth_file"]
     # ============================================================================
     topn = 20
     recall_list = []
