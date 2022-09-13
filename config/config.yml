@@ -59,8 +59,8 @@ test_gem_prepare:
   weights: "/home/mjy/dev/OverlapTransformer++_nclt/tools/gem_weights/amodel_transformer_depth_only15.pth.tar"
 
 test_seqot:
-  # groud truth
-  groud_truth_file: "/media/mjy/Samsung_T5/NCLT_dataset/gt_by_dis/gt_15dis_1208_1_02_0205.npy"
+  # ground truth
+  ground_truth_file: "/media/mjy/Samsung_T5/NCLT_dataset/gt_by_dis/gt_15dis_1208_1_02_0205.npy"
 
 viz:
   poses_database: "/media/mjy/Samsung_T5/NCLT_dataset/velodyne_poses/T_w_r_gt_velo_2012-01-08.npy"
