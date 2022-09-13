@@ -9,7 +9,8 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 ### Table of Contents
 1. [Dependencies](#Dependencies)
 2. [How to use](#How-to-use)
-3. [License](#License)
+3. [Data preparation](#Data-preparation)
+4. [License](#License)
 
 ## Dependencies
 
@@ -107,6 +108,9 @@ groud_truth_file: ground truth containing correct loops.
 ##### viz
 * poses_database: poses of the trajectory of the database.
 * poses_query: poses of the trajectory of the query sequence.
+
+## Data preparation
+Coming soon ...
 
 ## License
 
