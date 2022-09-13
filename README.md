@@ -8,6 +8,8 @@ SeqOT is a sequence-enhanced LiDAR-based place recognition method based on our p
 <img src="https://github.com/BIT-MJY/SeqOT/blob/main/overview.png" width="48%" ><img src="https://github.com/BIT-MJY/SeqOT/blob/main/visualize/SeqOT.gif" width="48%" >  
 Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT dataset. It can be seen that SeqOT is robust to driving directions.  
 
+---
+
 ### Table of Contents
 1. [Dependencies](#Dependencies)
 2. [How to use](#How-to-use)
