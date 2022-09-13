@@ -3,6 +3,8 @@ The code for our paper submitted to TIE: **SeqOT: A Spatial-Temporal Transformer
 
 SeqOT is a sequence-enhanced LiDAR-based place recognition method based on our previous work [OverlapTransformer (OT)](https://github.com/haomo-ai/OverlapTransformer) for RAL/IROS 2022.  
 
+---
+
 <img src="https://github.com/BIT-MJY/SeqOT/blob/main/overview.png" width="48%" ><img src="https://github.com/BIT-MJY/SeqOT/blob/main/visualize/SeqOT.gif" width="48%" >  
 Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT dataset. It can be seen that SeqOT is robust to driving directions.  
 
