@@ -114,7 +114,7 @@ groud_truth_file: ground truth containing correct loops.
 
 ## Data preparation
 
-Please use the following commands to prepare data. *We will also upload the preprocessed data used by SeqOT after the paper is accepted.*
+Please use the following commands to prepare data. **We will also upload the preprocessed data used by SeqOT after the paper is accepted.**
 
 ### Range image generation
 
