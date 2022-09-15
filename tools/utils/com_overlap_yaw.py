@@ -75,7 +75,6 @@ def com_overlap_yaw(scan_paths, poses, frame_idx, leg_output_width=360, viz=Fals
   current_pose = poses[frame_idx]
 
   tau_ = 1.2
-  print("tau: ", tau_)
 
   for reference_idx in range(len(scan_paths)):
     # generate range projection for the reference frame
@@ -96,61 +95,14 @@ def com_overlap_yaw(scan_paths, poses, frame_idx, leg_output_width=360, viz=Fals
                                                         cut_z=False,
                                                         low=lowest,
                                                         high=highest)
-    # if reference_idx == 0:
+
     dist = np.linalg.norm(reference_pose[:3, -1].reshape(3,) - current_pose[:3, -1].reshape(3,))
 
     # calculate overlap
     overlap = np.count_nonzero(
       abs(reference_range[reference_range > 0] - current_range[reference_range > 0]) < tau_) / valid_num
-      # abs(reference_range[reference_range > 0] - current_range[reference_range > 0]) < 2) / valid_num
     overlaps.append(overlap)
 
-    # print(str(dist) + " ---> ", overlap)
-    # print(dist)
-    # if overlap < 0.2 and dist < 4:
-    # if reference_idx==len(scan_paths)-1:
-    # # if reference_idx==1366:
-    #   viz=True
-    if viz:
-      # print(reference_points_in_current[-1,:])
-      # print(reference_points_in_current.shape)
-      # print("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}")
-      # print(current_pose)
-      # print(reference_pose)
-      # print("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}")
-
-      reference_range_raw, _, _ = range_projection(reference_points,
-                                               fov_up=fov_up,
-                                               fov_down=fov_down,
-                                               proj_H=proj_H,
-                                               proj_W=proj_W,
-                                               max_range=80,
-                                               cut_z=False,
-                                               low=lowest,
-                                               high=highest)
-
-      reference_range_overlap = np.ones_like(reference_range) * (-1)
-      reference_range_overlap[reference_range > 0] = reference_range[reference_range > 0] - current_range[reference_range > 0]
-      print(reference_idx)
-      print(dist)
-      print(overlap)
-      print(reference_pose)
-      plt.figure(figsize=(15,15))
-      plt.subplot(411)
-      plt.title("current_range")
-      plt.imshow(current_range)
-      plt.subplot(412)
-      plt.title("reference_range")
-      plt.imshow(reference_range)
-      plt.subplot(413)
-      plt.title("reference_range_raw")
-      plt.imshow(reference_range_raw)
-      plt.subplot(414)
-      plt.title("overlap_range")
-      plt.imshow(reference_range_overlap)
-
-      plt.show()
-      print("===========================")
     
     # calculate yaw angle
     relative_transform = np.linalg.inv(current_pose).dot(reference_pose)
@@ -161,8 +113,6 @@ def com_overlap_yaw(scan_paths, poses, frame_idx, leg_output_width=360, viz=Fals
     yaw_element_idx = int(- (yaw / np.pi) * yaw_resolution//2 + yaw_resolution//2)
     yaw_idxs.append(yaw_element_idx)
 
-    # print('finished pair id: ', reference_idx)
-  
   # ground truth format: each row contains [current_frame_idx, reference_frame_idx, overlap, yaw]
   ground_truth_mapping = np.zeros((len(scan_paths), 4))
   ground_truth_mapping[:, 0] = np.ones(len(scan_paths)) * frame_idx
@@ -239,53 +189,6 @@ def com_overlap_yaw_idx(scan_paths, poses, frame_idx, leg_output_width=360, viz=
             abs(reference_range[reference_range > 0] - current_range[reference_range > 0]) < tau_) / valid_num
         # abs(reference_range[reference_range > 0] - current_range[reference_range > 0]) < 2) / valid_num
         overlaps.append(overlap)
-
-        # print(str(dist) + " ---> ", overlap)
-        # print(dist)
-        # if overlap < 0.2 and dist < 4:
-        if reference_idx>=1 and idx_in_range[reference_idx-1] == 27901:
-            viz = True
-        if viz:
-            # print(reference_points_in_current[-1,:])
-            # print(reference_points_in_current.shape)
-            # print("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}")
-            # print(current_pose)
-            # print(reference_pose)
-            # print("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}")
-
-            reference_range_raw, _, _ = range_projection(reference_points,
-                                                         fov_up=fov_up,
-                                                         fov_down=fov_down,
-                                                         proj_H=proj_H,
-                                                         proj_W=proj_W,
-                                                         max_range=80,
-                                                         cut_z=False,
-                                                         low=lowest,
-                                                         high=highest)
-
-            reference_range_overlap = np.ones_like(reference_range) * (-1)
-            reference_range_overlap[reference_range > 0] = reference_range[reference_range > 0] - current_range[
-                reference_range > 0]
-            print(reference_idx)
-            print(dist)
-            print(overlap)
-            print(reference_pose)
-            plt.figure(figsize=(15, 15))
-            plt.subplot(411)
-            plt.title("current_range")
-            plt.imshow(current_range)
-            plt.subplot(412)
-            plt.title("reference_range")
-            plt.imshow(reference_range)
-            plt.subplot(413)
-            plt.title("reference_range_raw")
-            plt.imshow(reference_range_raw)
-            plt.subplot(414)
-            plt.title("overlap_range")
-            plt.imshow(reference_range_overlap)
-
-            plt.show()
-            print("===========================")
 
         # calculate yaw angle
         relative_transform = np.linalg.inv(current_pose).dot(reference_pose)
