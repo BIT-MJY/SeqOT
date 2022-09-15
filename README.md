@@ -120,6 +120,8 @@ Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/tools/utils/
 
 ### Training index generation
 
+Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepararion/gen_training_index.py) to generate training indices of NCLT dataset. You need to modify the params including `poses_database`, `poses_query`, and `scan_database_root`.
+
 ```
 cd data_prepararion
 python ./gen_training_index.py 
