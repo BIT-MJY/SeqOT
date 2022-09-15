@@ -114,6 +114,8 @@ groud_truth_file: ground truth containing correct loops.
 
 ## Data preparation
 
+Please use the following commands to prepare data. *We will also upload the preprocessed data used by SeqOT after the paper is accepted.*
+
 ### Range image generation
 
 Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/tools/utils/gen_depth_data.py) to generate range images of NCLT dataset. You need to modify the params including `scan_folder` and `dst_folder`.
