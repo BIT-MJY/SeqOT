@@ -120,7 +120,11 @@ Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/tools/utils/
 
 ### Training index generation
 
-Coming soon ...
+```
+cd data_prepararion
+python ./gen_training_index.py 
+```
+
 
 ### Groud truth generation
 
