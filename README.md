@@ -127,10 +127,14 @@ cd data_prepararion
 python ./gen_training_index.py 
 ```
 
-
 ### Groud truth generation
 
-Coming soon ...
+Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepararion/gen_ground_truth.py) to generate groud truth loops of NCLT dataset. 
+
+```
+cd data_prepararion
+python ./gen_ground_truth.py 
+```
 
 ## License
 
