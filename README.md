@@ -11,10 +11,15 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 ---
 
 ### Table of Contents
-1. [Dependencies](#Dependencies)
-2. [How to use](#How-to-use)
-3. [Data preparation](#Data-preparation)
-4. [License](#License)
+1. [Publications](#Publications)
+2. [Dependencies](#Dependencies)
+3. [How to use](#How-to-use)
+4. [Data preparation](#Data-preparation)
+5. [License](#License)
+
+## Publications
+
+The arXiv version is coming soon ...
 
 ## Dependencies
 
