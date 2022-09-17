@@ -70,6 +70,7 @@ python training_seqot.py
 python gen_sub_descriptors.py
 python training_gem.py 
 ```
+We will release our pretrained model after the paper is accepted.
 
 ### Test
 
