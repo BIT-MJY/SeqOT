@@ -21,7 +21,19 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 
 ## Publications
 
-The arXiv version is coming soon ...
+If you use the code in your work, please cite our current [arXiv version](https://arxiv.org/abs/2209.07951):
+
+```
+@misc{ma2022tie,
+      title={SeqOT: A Spatial-Temporal Transformer Network for Place Recognition Using Sequential LiDAR Data}, 
+      author={Junyi Ma and Xieyuanli Chen and Jingyi Xu and Guangming Xiong},
+      year={2022},
+      eprint={2209.07951},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
 
 ## Dependencies
 
