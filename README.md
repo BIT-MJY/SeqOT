@@ -137,6 +137,11 @@ groud_truth_file: ground truth containing correct loops. ([link](https://drive.g
 ##### viz
 * poses_database: poses of the trajectory of the database. ([link](https://drive.google.com/file/d/1NusFV_xMI1s7i2s3u9vKdHnw0dWI7uii/view?usp=share_link))
 * poses_query: poses of the trajectory of the query sequence. ([link](https://drive.google.com/file/d/1NBZeYK5giNr5r5l0TI0Ov9W_M8mvZT4a/view?usp=share_link))
+##### gen_training_index
+* poses_database: poses of the trajectory of the database. ([link](https://drive.google.com/file/d/1NusFV_xMI1s7i2s3u9vKdHnw0dWI7uii/view?usp=share_link))
+* poses_query: poses of the trajectory of the query sequence. ([link](https://drive.google.com/file/d/1NBZeYK5giNr5r5l0TI0Ov9W_M8mvZT4a/view?usp=share_link))
+* scan_database_root: path of reference .bin of the database. ([link](https://s3.us-east-2.amazonaws.com/nclt.perl.engin.umich.edu/velodyne_data/2012-01-08_vel.tar.gz))
+
 
 ## Data preparation
 
