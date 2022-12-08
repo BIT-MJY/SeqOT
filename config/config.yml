@@ -56,7 +56,7 @@ test_gem_prepare:
   # sequence length to generate final-descriptors
   seqlen: 20
   # pretrained model
-  weights: "/home/mjy/dev/OverlapTransformer++_nclt/tools/gem_weights/amodel_transformer_depth_only15.pth.tar"
+  weights: "/home/mjy/dev/OverlapTransformer++_nclt/tools/gem_weights/pretrained_gem.pth.tar"
 
 test_seqot:
   # ground truth
