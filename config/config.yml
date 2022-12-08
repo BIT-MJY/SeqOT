@@ -21,14 +21,14 @@ training_seqot:
   # whether resuming from the pretrained model below
   resume: False
   # pretrained model
-  weights: "/media/mjy/Samsung_T5/NCLT_dataset/weights/amodel_transformer_depth_only12.pth.tar"
+  weights: "/media/mjy/Samsung_T5/NCLT_dataset/weights/pretrained_seqot.pth.tar"
 
 
 gen_sub_descriptors:
   # sequence length to generate sub-descriptors
   seqlen: 3
   # pretrained model
-  weights: "/media/mjy/Samsung_T5/NCLT_dataset/weights/amodel_transformer_depth_only12.pth.tar"
+  weights: "/media/mjy/Samsung_T5/NCLT_dataset/weights/pretrained_seqot.pth.tar"
 
 
 training_gem:
