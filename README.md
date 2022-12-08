@@ -12,7 +12,7 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 
 ---
 ## News
-**[2022-12]** Our paper is accepted by IEEE Transactions on Industrial Electronics (TIE)!
+**[2022-12]** Our paper is accepted by **IEEE Transactions on Industrial Electronics (TIE)**!
 
 
 
