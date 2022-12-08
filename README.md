@@ -108,17 +108,17 @@ Before training and test, please modify the params in the [config.yml](https://g
 * range_image_database_root: path of reference range images in database sequence.
 * range_image_query_root: path of query range images in query sequence.
 ##### training_seqot
-* traindata_file: index for training.
-* poses_file: poses of the trajectory of the database.
+* traindata_file: index for training. ([link](https://drive.google.com/file/d/1jEcnuHjEi0wqe8GAoh6UTa4UXTu0sDPr/view?usp=share_link))
+* poses_file: poses of the trajectory of the database. ([link](https://drive.google.com/file/d/1NusFV_xMI1s7i2s3u9vKdHnw0dWI7uii/view?usp=share_link))
 * height: height of range images.
 * width: width of range images.
 * seqlen: sequence length to generate sub-descriptors.
 * lr: learning rate for training feature extracter.
 * resume: whether resuming from the pretrained model below.
-* weights: pretrained feature extracter.
+* weights: pretrained feature extracter. ([link](https://drive.google.com/file/d/17EDuLzolOFjE7bq9BbwqDDnnWwiTlqWB/view?usp=share_link))
 ##### gen_sub_descriptors
 * seqlen: sequence length to generate sub-descriptors.
-* weights: pretrained feature extracter.
+* weights: pretrained feature extracter. ([link](https://drive.google.com/file/d/17EDuLzolOFjE7bq9BbwqDDnnWwiTlqWB/view?usp=share_link))
 ##### training_gem
 * traindata_file: index for training (same as the one of training_seqot).
 * poses_file: poses of the trajectory of the database (same as the one of training_seqot).
@@ -133,10 +133,10 @@ Before training and test, please modify the params in the [config.yml](https://g
 * seqlen: sequence length to generate final-descriptors (same as the one of training_gem).
 * weights: pretrained pooling module.
 ##### test_seqot
-groud_truth_file: ground truth containing correct loops.
+groud_truth_file: ground truth containing correct loops. ([link](https://drive.google.com/file/d/13-tpLQiHK4krd-womDV6UPevvHUIFNyF/view?usp=share_link))
 ##### viz
-* poses_database: poses of the trajectory of the database.
-* poses_query: poses of the trajectory of the query sequence.
+* poses_database: poses of the trajectory of the database. ([link](https://drive.google.com/file/d/1NusFV_xMI1s7i2s3u9vKdHnw0dWI7uii/view?usp=share_link))
+* poses_query: poses of the trajectory of the query sequence. ([link](https://drive.google.com/file/d/1NBZeYK5giNr5r5l0TI0Ov9W_M8mvZT4a/view?usp=share_link))
 
 ## Data preparation
 
