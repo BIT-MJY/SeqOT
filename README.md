@@ -1,5 +1,5 @@
 # SeqOT
-The code for our paper accepted by IEEE Transactions on Industrial Electronics:   
+The code for our paper accepted by **IEEE Transactions on Industrial Electronics**:   
 ### SeqOT: A Spatial-Temporal Transformer Network for Place Recognition Using Sequential LiDAR Data.
 
 [[IEEE Xplore TIE 2022](https://ieeexplore.ieee.org/document/9994714)] [[arXiv](https://arxiv.org/abs/2209.07951)]
