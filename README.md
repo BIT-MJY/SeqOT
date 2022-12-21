@@ -26,17 +26,15 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 
 ## Publications
 
-If you use the code in your work, please cite our current [arXiv version](https://arxiv.org/abs/2209.07951):
+If you use the code in your work, please cite our [paper](https://ieeexplore.ieee.org/document/9994714):
 
 ```
-@misc{ma2022seqot,
-      title={SeqOT: A Spatial-Temporal Transformer Network for Place Recognition Using Sequential LiDAR Data}, 
-      author={Junyi Ma and Xieyuanli Chen and Jingyi Xu and Guangming Xiong},
-      year={2022},
-      eprint={2209.07951},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{ma2022tie,
+  author={Ma, Junyi and Chen, Xieyuanli and Xu, Jingyi and Xiong, Guangming},
+  journal={IEEE Transactions on Industrial Electronics}, 
+  title={SeqOT: A Spatial-Temporal Transformer Network for Place Recognition Using Sequential LiDAR Data}, 
+  year={2022},
+  doi={10.1109/TIE.2022.3229385}}
 ```
 
 
