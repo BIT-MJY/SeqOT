@@ -2,6 +2,8 @@
 The code for our paper accepted by IEEE Transactions on Industrial Electronics:   
 ### SeqOT: A Spatial-Temporal Transformer Network for Place Recognition Using Sequential LiDAR Data.
 
+[IEEE Xplore TIE 2022](https://ieeexplore.ieee.org/document/9994714) [arXiv](https://arxiv.org/abs/2209.07951)
+ 
 SeqOT is a sequence-enhanced LiDAR-based place recognition method based on our previous work [OverlapTransformer (OT)](https://github.com/haomo-ai/OverlapTransformer) for RAL/IROS 2022.  
 
 Developed by [Junyi Ma](https://github.com/BIT-MJY) and [Xieyuanli Chen](https://github.com/Chen-Xieyuanli).
