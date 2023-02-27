@@ -89,7 +89,7 @@ python training_seqot.py
 python gen_sub_descriptors.py
 python training_gem.py 
 ```
-Note that we only train our model using the oldest sequence of NCLT dataset (2012-10-08), to prove that our model works well for long time spans even if seeing limited data.  
+Note that we only train our model using the oldest sequence of NCLT dataset (2012-01-08), to prove that our model works well for long time spans even if seeing limited data.  
 
 ### Test
 
