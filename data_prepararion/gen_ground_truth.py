@@ -30,7 +30,7 @@ for i in np.arange(0, poses_query.shape[0], 5):
     print(i)
     one_row = []
     for idx in range(0,poses_database.shape[0]):
-        if np.linalg.norm(poses_database[idx, :3, -1] - poses_database[i, :3, -1]) < 15 and i!=idx:
+        if np.linalg.norm(poses_database[idx, :3, -1] - poses_query[i, :3, -1]) < 15:
             one_row.append(idx)
     all_rows.append(one_row)
     print(str(i) + " ---> ", one_row)
