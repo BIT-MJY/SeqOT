@@ -20,13 +20,13 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 
 
 ### Table of Contents
-1. [Publications](#Publications)
+1. [Publication](#Publication)
 2. [Dependencies](#Dependencies)
 3. [How to use](#How-to-use)
 4. [Data preparation](#Data-preparation)
 5. [License](#License)
 
-## Publications
+## Publication
 
 If you use the code in your work, please cite our [paper](https://ieeexplore.ieee.org/document/9994714):
 
