@@ -14,7 +14,7 @@ Developed by [Junyi Ma](https://github.com/BIT-MJY) and [Xieyuanli Chen](https:/
 Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT dataset. It can be seen that SeqOT is robust to driving directions.  
 
 ---
-## News
+## News!
 **[2022-12]** Our paper is accepted by **IEEE Transactions on Industrial Electronics (TIE)**!
 
 
