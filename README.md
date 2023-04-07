@@ -22,8 +22,8 @@ Fig. 1 System overview with Haomo dataset and visualized evaluation on NCLT data
 ## Table of Contents
 1. [Publication](#Publication)
 2. [Dependencies](#Dependencies)
-3. [How to use](#How-to-use)
-4. [Data preparation](#Data-preparation)
+3. [How to Use](#How-to-Use)
+4. [Data Preparation](#Data-Preparation)
 5. [License](#License)
 
 ## Publication
@@ -75,7 +75,7 @@ To use a GPU, first you need to install the nvidia driver and CUDA.
   sudo -H pip3 install -r requirements.txt
   ```
   
-## How to use
+## How to Use
   
 We provide a training and test tutorial for NCLT sequences in this repository. 
   
@@ -142,15 +142,15 @@ groud_truth_file: ground truth containing correct loops. ([link](https://drive.g
 * scan_database_root: path of reference .bin of the database. ([link](https://s3.us-east-2.amazonaws.com/nclt.perl.engin.umich.edu/velodyne_data/2012-01-08_vel.tar.gz))
 
 
-## Data preparation
+## Data Preparation
 
 Please use the following commands to prepare data. We have uploaded all the necessary files mentioned above except the range images which you can generate easily following our instruction.
 
-### Range image generation
+### Range Image Generation
 
 Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/tools/utils/gen_depth_data.py) to generate range images of NCLT dataset. You need to modify the params including `scan_folder` and `dst_folder`.
 
-### Training index generation
+### Training Index Generation
 
 Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepararion/gen_training_index.py) to generate training indices of NCLT dataset. You need to modify the params including `poses_database`, `poses_query`, and `scan_database_root`.
 
@@ -159,7 +159,7 @@ cd data_prepararion
 python ./gen_training_index.py 
 ```
 
-### Groud truth generation
+### Groud Truth Generation
 
 Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepararion/gen_ground_truth.py) to generate groud truth loops of NCLT dataset. 
 
