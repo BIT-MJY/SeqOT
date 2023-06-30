@@ -158,7 +158,6 @@ Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepara
 cd data_prepararion
 python ./gen_training_index.py 
 ```
-
 ### Groud Truth Generation
 
 Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepararion/gen_ground_truth.py) to generate groud truth loops of NCLT dataset. 
@@ -167,7 +166,6 @@ Please use [this script](https://github.com/BIT-MJY/SeqOT/blob/main/data_prepara
 cd data_prepararion
 python ./gen_ground_truth.py 
 ```
-
 ## License
 
 Copyright 2022, Junyi Ma, Xieyuanli Chen, Jingyi Xu, Guangming Xiong, Beijing Institute of Technology.
